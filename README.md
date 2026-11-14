@@ -2,6 +2,8 @@
 
 **Follow a thought. Find another world.**
 
+[Open Rabbit Hole](https://shricharanpadala.github.io/rabbit-hole/)
+
 A local-first visual research workspace for people who enjoy following an interesting question somewhere unexpected. Explore a graph, inspect where its connections come from, collect observations and keep a portable record of your journey.
 
 ## What works
@@ -76,7 +78,11 @@ Starter notes and UI artwork are original. The Moon starter links to [NASA's Moo
 
 ## Deployment
 
-Any static host can serve `dist/`. A private preview is configured through `.openai/hosting.json`. GitHub Actions runs syntax and unit checks; it does not publish your repository or enable GitHub Pages automatically.
+The public site is hosted on [GitHub Pages](https://shricharanpadala.github.io/rabbit-hole/). Repository Settings → Pages uses GitHub Actions as its source. On pushes to `main`, `.github/workflows/test.yml` runs syntax and unit checks before publishing `dist/`. Pull requests run checks without deploying.
+
+Any static host can also serve `dist/`; assets and shared routes support a project subdirectory. `.openai/hosting.json` is used only for the separate development preview.
+
+Moving from the original site: browser storage belongs to each website address. On the original site, open **Your trails → Export workspace**, then use **Your trails → Import workspace** on GitHub Pages to bring across your graph, observations and current path. Saved trails can be exported separately as Markdown. Changing hosting does not transfer browser data automatically.
 
 ## Further development
 
