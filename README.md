@@ -50,7 +50,7 @@ npm test
 | `dist/style.css` | Responsive interface and reduced-motion treatment |
 | `tests/` | Node's built-in test runner; no test dependencies |
 
-This is a functional client-side v1. It does not have an AI inference backend, multi-user collaboration, cross-device cloud sync, or a crawler. Its intelligence is transparent graph traversal and lexical ranking over real article links. It does not invent a semantic or causal relationship between two topics.
+Rabbit Hole runs entirely in your browser. Graph traversal and lexical ranking connect real article links. Multi-user collaboration, cross-device sync and web crawling are outside the current release. Connections are reading routes, not claims of semantic or causal relationships.
 
 ## How expansion works
 
@@ -80,7 +80,7 @@ Starter notes and UI artwork are original. The Moon starter links to [NASA's Moo
 
 The public site is hosted on [GitHub Pages](https://shricharanpadala.github.io/rabbit-hole/). Repository Settings → Pages uses GitHub Actions as its source. On pushes to `main`, `.github/workflows/test.yml` runs syntax and unit checks before publishing `dist/`. Pull requests run checks without deploying.
 
-Any static host can also serve `dist/`; assets and shared routes support a project subdirectory. `.openai/hosting.json` is used only for the separate development preview.
+Any static host can also serve `dist/`; assets and shared routes support a project subdirectory.
 
 Moving from the original site: browser storage belongs to each website address. On the original site, open **Your trails → Export workspace**, then use **Your trails → Import workspace** on GitHub Pages to bring across your graph, observations and current path. Saved trails can be exported separately as Markdown. Changing hosting does not transfer browser data automatically.
 
