@@ -1,0 +1,11 @@
+{
+  "name": "rabbit-hole",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A visual playground for curiosity, connected ideas and saved reading trails.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/core.js && node --check dist/data.js && node --check dist/api.js && node --check dist/engine.js && node --check dist/storage.js"
+  }
+}
